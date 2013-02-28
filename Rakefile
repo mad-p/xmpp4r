@@ -156,6 +156,8 @@ begin
     s.required_ruby_version = ">= 1.8.4"
   end
 
+  spec.add_dependency "pry", ">= 0.9"
+
   Gem::PackageTask.new(spec) do |pkg|
     pkg.gem_spec = spec
     pkg.need_tar = true
